@@ -126,6 +126,7 @@ digraph {
 	dtm_clock_skew -> dix_client;
 	dtm_timestamps -> dix_client;
 	dtm_telemetry -> hare_fol_monitor;
+	dtm_cortx_int3 -> sns_int0;
 	sns_repair -> sns_int0;
 	hare_sns_repair_control -> sns_int0;
 	sns_env -> sns_int0;
@@ -142,6 +143,7 @@ digraph {
 	sns_int3 -> sns_performance;
 	dix_repair -> dix_int0;
 	hare_dix_repair_control -> dix_int0;
+	dtm_cortx_int3 -> dix_int0;
 	dix_env -> dix_int0;
 	dix_int0 -> dix_int1;
 	dix_transient_failure -> dix_int1;
